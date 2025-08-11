@@ -1,0 +1,147 @@
+ 
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>House Renovation</title>
+    <link rel="icon" href="img/logo1.png" type="image/x-icon" />
+
+  <meta id="Meta1" charset="utf-8" runat="server" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta id="Meta2" content="" name="keywords" runat="server" /> 
+  <meta id="Meta3" content="" name="description" runat="server" />
+
+    
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta id="Meta4" property="og:title" runat="server" content="" />
+  <meta id="Meta5" property="og:image" runat="server" content="" />
+  <meta id="Meta6" property="og:url" runat="server" content="" />
+  <meta id="Meta7" property="og:site_name" runat="server" content="" />
+  <meta id="Meta8" property="og:description" runat="server" content="" />
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta id="Meta9" name="twitter:card" runat="server" content="summary" />
+  <meta id="Meta10" name="twitter:site" runat="server" content="" />
+  <meta id="Meta11" name="twitter:title" runat="server" content="" />
+  <meta id="Meta12" name="twitter:description" runat="server" content="" />
+  <meta id="Meta13" name="twitter:image" runat="server" content="" />
+
+  <!-- Favicon -->
+  <link id="Link1" href="img/favicon.ico" rel="icon" runat="server" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet" />
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet" />
+    
+    <style>
+        .Set 
+        {
+            background-color: black;
+            color: black;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+<!--==============================Page Content================================================== -->
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div id="logo" class="pull-left">
+         <h3> HousePotter</h3>      
+      </div>
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="Aboutus.aspx">About Us</a></li>
+          <li><a href="Quotation.aspx">Quotation</a></li>
+           <li class="menu-has-children"><a href="#" runat="server">Our Service</a>
+            <ul>   
+                <li class="menu-has-children"><a href="#">Civil_Construction</a>
+                <ul>
+                  <li><a href="civil_port.aspx" runat="server">Repair/Renovation</a></li>
+                  <li><a href="NewCivil_port.aspx" runat="server">New_Construction</a></li>  
+                </ul>
+              </li>
+              <li><a href="carpenter.aspx" runat="server">Carpenter</a></li>
+              <li><a href="painter.aspx" runat="server">Panting</a></li>
+              <li><a href="Falseceilling.aspx" runat="server">False Ceiling/P.O.P.</a></li>
+              <li><a href="Electrician.aspx" runat="server">Electrician</a></li>
+              <li><a href="plambing.aspx" runat="server">Plambling</a></li>
+            </ul>
+          </li>
+          <li><a href="Contact.aspx" runat="server">Contact Us</a></li>
+                <li><asp:HyperLink ID="hllogin" runat="server" Text="Login" href="LoginPage.aspx" CssClass="active"></asp:HyperLink></li>
+                <li class="menu-has-children"><asp:LinkButton ID="lnkbntlogout" runat="server" CssClass="active" Text="Logout" OnClick="lnkbntlogout_Click"></asp:LinkButton>
+             <ul>
+                   <li class="Set"><a><asp:Label ID="label" runat="server" CssClass="active"></asp:Label></a></li>
+             </ul>
+               </li>
+        </ul>
+          
+          <asp:Label ID="label1" runat="server"></asp:Label>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </header>
+  <!-- #header -->
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+    <!-- Footer -->
+        <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+            <p class="copyright-text"></p>
+            <div class="credits">             
+              <a href="Default.aspx">&copy;HousePotter</a> by @itspraveenkp
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+            
+  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/tether/js/tether.min.js"></script>
+  <script src="lib/stellar/stellar.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/lockfixed/lockfixed.min.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+   </div>
+  </form>
+</body>
+</html>
